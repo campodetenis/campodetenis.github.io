@@ -84,10 +84,13 @@ body{
 }
 
 .section_text, .subsection_text{
-    padding:  0 15%;
     font-size: x-large;
     text-align: justify;
     font-family:'Baskervville';
+}
+
+.section_text{
+    padding:  0 15%;
 }
 
 
@@ -97,19 +100,16 @@ body{
 }
 
 #Necesidades .need{
-    /*float:left;*/
     padding: 10px;
     overflow: hidden;
     display: inline-table;
-    width: 30%;
-    /*
-    margin-bottom: 100px;
-    */
+    width: 35%;
     margin-left: 5%;
     margin-right: 5%;
     background-color: #a9c8c815;
     margin-bottom: 10%;
-    
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 #Necesidades .need .need_value{
@@ -140,7 +140,7 @@ body{
 
 #Tecnologias .subsection{
     display: inline-table;
-    width: 35%;
+    width: 40%;
     padding: 30px;
 }
 

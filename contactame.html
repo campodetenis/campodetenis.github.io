@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de prueba</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Bienvenido a mi pagina web</h1>
+        <ul>
+            <li><a href=./index.html>inicio</a></li>
+            <li><a href="./sobreMi.html">sobre mi</a></li>
+            <li><a href="./paginas.html">páginas</a></li>
+            <li><a href="./contactame.html">contactame</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <h2>contactame</h2>
+        <p>puedes contactar conmigo utilizando ese formulario</p>
+        <form>
+            <label for="nombreContacto">Nombre</label>
+            <input type="text" name="nombre" id="nombreContacto"/>
+            <label for="emailContacto">Correo</label>
+            <input type="email" name="email" id="emailContacto"/>
+            <label for="consultaContacto">Cual es tu consulta</label>
+            <textarea id="consultaContacto" name="consulta"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <div id="pieDePagina">
+        <label>Copyright: Guillermo Vicente González</label>
+    </div>
+</body>
+</html>

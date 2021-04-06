@@ -1,0 +1,120 @@
+#header{
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px 20px;
+}
+
+#header h1{
+    margin: 0px;
+}
+
+#header ul{
+    list-style: none;
+    padding: 0px;
+    overflow: hidden;
+    /*
+    pequeño truco para que los elementos que contiene el padre aparezcan como deben
+    */
+}
+
+#header li{
+    float: left;
+    /*
+    para que aparezcan en linea en lugar de bloque
+    */
+    margin: 0 20px 0 0;
+}
+
+body{
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#content{
+    padding: 20px;
+}
+
+#header ul a{
+    color: #FFFFFF;
+    text-decoration: none ;
+}
+
+#header ul a:hover{
+    color: #ff9999;
+}
+
+.twoColumns img, .twoColumns p{
+    float: left;
+    width: 30%;
+}
+
+.twoColumns p{
+    margin: 0 40px;
+}
+
+#content form [type=text],#content form [type=email], #content form textarea{
+    display: block;
+    margin-bottom: 10px;
+    width: 50%;
+    padding: 10px;
+    background-color: #efefef;
+    border: 0;
+    color: #666666;
+}
+
+#pieDePagina{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+#content form{
+    clear: both;
+    /*
+    para que no haya nada ni a izda ni a dcha
+    */
+}
+
+
+
+#content table tr{
+    background-color:#ccc ;
+    border-bottom:  1px solid #666;
+}
+
+#content table tr:nth-child(even){
+    background-color:#efefef;
+}
+
+#content table tr> *{
+    /*
+    tr> + es para que afecte a todo lo que este estrictamente inmediantamente debajo de tr
+    */
+    padding: 3px 10px;
+    border-bottom:  1px solid #666;
+}
+
+
+.marco{
+    background-color: red;
+}
+
+
+
+.pagina_marco{
+    display: inline-table;
+    margin: 1%;
+    width: 30%;
+    height: 20%;
+    box-shadow: 2px 2px 2px rgba(58, 58, 58, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+#foto_pagina img{
+    display: block;
+    width: 20%;
+    height: 20%;
+}

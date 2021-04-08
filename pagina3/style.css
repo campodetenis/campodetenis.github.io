@@ -1,0 +1,193 @@
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+@font-face {
+    font-family: Connection;
+    src: url("/webfontkit-20210407-134018/connectionii-2wj8-webfont.woff");
+}
+
+@font-face {
+    font-family: OldSchool;
+    src: url("/webfontkit-20210407-134018/oldschooladventures-42j9-webfont.woff");
+}
+
+@font-face {
+    font-family: PixelBoy;
+    src: url("/webfontkit-20210407-134018/pixeboy-z8xgd-webfont.woff");
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color: #99dddb;
+    background-image:  linear-gradient(30deg, #9607cf 12%, transparent 12.5%, transparent 87%, #9607cf 87.5%, #9607cf), linear-gradient(150deg, #9607cf 12%, transparent 12.5%, transparent 87%, #9607cf 87.5%, #9607cf), linear-gradient(30deg, #9607cf 12%, transparent 12.5%, transparent 87%, #9607cf 87.5%, #9607cf), linear-gradient(150deg, #9607cf 12%, transparent 12.5%, transparent 87%, #9607cf 87.5%, #9607cf), linear-gradient(60deg, #9607cf77 25%, transparent 25.5%, transparent 75%, #9607cf77 75%, #9607cf77), linear-gradient(60deg, #9607cf77 25%, transparent 25.5%, transparent 75%, #9607cf77 75%, #9607cf77);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    background-attachment: fixed;
+    -ms-overflow-style: none;  /* barra Edge */
+    scrollbar-width: none;  /* barra Firefox */
+    text-align: justify;
+    position:relative;
+}
+
+/*
+para esconder la barra de desplazamiento
+en chrome safari y opera
+*/
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#top{
+    margin: 0 0;
+    height: 100%;
+    width: 5%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right ,#111,rgba(17, 17, 17, 0.801));
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    border-style: groove groove groove none;
+    border-width: 3px;
+}
+
+#top:hover{
+    height: 100%;
+    margin: 0;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s ease-in-out 0s;
+}
+
+#top:hover a{
+    display: block;
+    transition: 1s ease-in-out 0s;
+}
+
+#top a{
+    display: none;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    transition: 0.3s ease-in-out 0s;
+    font-family:'PixelBoy';
+}
+
+#top a:hover {
+    color: rgb(60, 255, 0);
+    transition:1s;
+    background-color: rgba(128, 128, 128, 0.295);
+}
+
+.section{
+    margin-left: 10%;
+    color:#ffffff;
+    border-style: groove;
+    border-bottom-right-radius: 7px;
+    margin-bottom: 2%;
+    position: relative;
+
+    /*
+    Seccion en diagonal
+    */
+    height: 100%;
+    width: 90%;
+    transform: skewY(-5deg);
+    background-image: linear-gradient(to bottom right ,#111,rgba(17, 17, 17, 0.822));
+
+
+}
+
+
+.section_title{
+    background-color: rgb(199, 199, 199);
+    border-style: inset;
+    margin-top: 0;
+    font-family: 'OldSchool';
+    font-weight: bold;
+    padding-left:.5%;
+    padding-top: .5%;
+    color:#000;
+}
+
+
+
+.section_text, .subsection_text, .need{
+    font-family: 'Connection';
+    font-size: x-large;
+    margin-right: 40%;
+    margin-left:100px;
+    padding:5%;
+    text-align: justify;
+    transform: skewY(+5deg);
+    /*si le pongo 5 no me acaba de gustar,se hace muy abruto.con 3 yo creo que se lee bien*/
+}
+
+.subsection_title{
+  color: rgb(60, 255, 0);
+  font-size: x-large;
+  padding: 0 5%;
+  transform: skewY(+5deg);
+  font-family: 'OldSchool';
+}
+
+
+/*
+Seccion de los gadgets
+*/
+
+#Necesidades{
+    padding-bottom: 10%;
+}
+
+
+
+#Necesidades .need{
+    overflow: hidden;
+    display: inline-table;
+    width: 700px;
+    margin: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    justify-items: center;
+    justify-content: center;
+    text-align: justify;
+
+}
+
+#Necesidades img{
+    width: 80%;
+    height: 80%;
+}
+
+#Necesidades .need_title_main, #Necesidades .need_title{
+    color: rgb(60, 255, 0);
+}
+
+
+/*
+seccion de tecnologias
+*/
+
+#Tecnologias .subsection_text, #Tecnologias .subsection .section_text{
+    margin-left: 150px;
+}
+
+
+
+.to_top{
+    display: none;
+}
